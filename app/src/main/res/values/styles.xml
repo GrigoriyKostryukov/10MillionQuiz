@@ -9,6 +9,11 @@
 
     <style name="answer_tile">
         <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="question_text">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>

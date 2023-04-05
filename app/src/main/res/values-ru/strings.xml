@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">10 миллионов</string>
+    <string name="game_over">Игра закончена. Попробуйте ещё раз</string>
+    <string name="win">Поздравляем! Вы выиграли!</string>
+    <string name="try_again">Ещё раз</string>
+    <string name="bet_error">Каждая ставка должна быть неотрицательным целым числом. Вы должны распределить всю доступную сумму между вариантами ответов</string>
+    <string name="ok">ОК</string>
+</resources>

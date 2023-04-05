@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">10 Million Quiz</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_over">The game is over. Try again</string>
+    <string name="win">Congratulations! You won!</string>
+    <string name="try_again">Try again</string>
+    <string name="bet_error">Every answer bet should be a non-negative integer. The sum of bets should be equal to the current score.</string>
+    <string name="ok">OK</string>
 </resources>
