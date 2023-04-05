@@ -5,4 +5,8 @@
     <string name="try_again">Try again</string>
     <string name="bet_error">Every answer bet should be a non-negative integer. The sum of bets should be equal to the current score.</string>
     <string name="ok">OK</string>
+    <string name="next_question">Submit</string>
+    <string name="question">Question %1$d</string>
+    <string name="play">Play</string>
+
 </resources>

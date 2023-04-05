@@ -61,7 +61,7 @@ class GameFragment : Fragment() {
             binding.totalSum.text = score.toString()
         })
         viewModel.currentQuestionNumber.observe(viewLifecycleOwner, Observer { number ->
-            binding.questionNumber.text = "Вопрос ${number}"
+            binding.questionNumber.text = String.format(getString(R.string.question), number)
         })
         viewModel.destination.observe(viewLifecycleOwner, Observer { destination ->
             if (destination != null) {

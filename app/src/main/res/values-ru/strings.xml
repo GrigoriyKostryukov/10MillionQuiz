@@ -5,4 +5,8 @@
     <string name="try_again">Ещё раз</string>
     <string name="bet_error">Каждая ставка должна быть неотрицательным целым числом. Вы должны распределить всю доступную сумму между вариантами ответов</string>
     <string name="ok">ОК</string>
+    <string name="next_question">Ответить</string>
+    <string name="question">Вопрос %1$d</string>
+    <string name="play">Начать</string>
+
 </resources>
