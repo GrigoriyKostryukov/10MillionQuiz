@@ -8,5 +8,9 @@
     <string name="next_question">Submit</string>
     <string name="question">Question %1$d</string>
     <string name="play">Play</string>
-
+    <string name="score_is">Your score is</string>
+    <string name="enter_name">Enter your name to save the result in the rating</string>
+    <string name="your_name">Your name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

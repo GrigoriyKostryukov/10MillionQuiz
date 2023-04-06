@@ -23,7 +23,7 @@ class GameViewModel(
 
     companion object {
         private const val START_SCORE: Int = 10000
-        private const val QUESTIONS_AMOUNT: Int = 10
+        private const val QUESTIONS_AMOUNT: Int = 2
         private const val ONE_SECOND = 1000L
         private const val COUNTDOWN_TIME = 60000L
     }
@@ -90,7 +90,6 @@ class GameViewModel(
     }
 
     private fun loadQuestionsList() {
-        val seed = System.currentTimeMillis()
         questions = dao.getQuestions().shuffled().toMutableList()
     }
 
@@ -107,7 +106,6 @@ class GameViewModel(
         }
         nextQuestion()
     }
-
 
     fun validateBets(usersInpit: List<String>): Boolean {
         if (!usersInpit.all { input ->

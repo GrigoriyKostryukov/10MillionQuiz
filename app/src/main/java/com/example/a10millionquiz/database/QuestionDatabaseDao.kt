@@ -28,6 +28,18 @@ interface QuestionDatabaseDao {
     fun getLast(): Question?
 
     @Query("SELECT * FROM answer WHERE question_id = :questionId")
-    fun getAnswers(questionId : Long): List<Answer>
+    fun getAnswers(questionId: Long): List<Answer>
+
+    @Query("SELECT * FROM user_result ORDER BY max_score DESC")
+    fun getRating(): List<UserResult>
+
+    @Update
+    fun updateUserResult(result: UserResult)
+
+    @Insert
+    fun insertUserResult(result: UserResult)
+
+    @Query("SELECT * FROM user_result WHERE name = :name LIMIT 1")
+    fun getResultByName(name: String): UserResult?
 
 }

@@ -8,5 +8,10 @@
     <string name="next_question">Ответить</string>
     <string name="question">Вопрос %1$d</string>
     <string name="play">Начать</string>
+    <string name="score_is">Ваш счёт</string>
+    <string name="enter_name">Введите ваше имя, чтобы сохранить результат в рейтинге</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
 
 </resources>

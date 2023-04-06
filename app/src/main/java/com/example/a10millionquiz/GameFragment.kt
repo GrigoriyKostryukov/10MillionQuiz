@@ -11,6 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.a10millionquiz.database.QuestionDatabase
 import com.example.a10millionquiz.databinding.FragmentGameBinding
 
@@ -28,7 +29,6 @@ class GameFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_game,
@@ -67,8 +67,9 @@ class GameFragment : Fragment() {
             if (destination != null) {
                 when (destination) {
                     NavigationDestination.SHOW_VICTORY -> {
-                        Navigation.findNavController(view!!)
-                            .navigate(R.id.action_gameFragment_to_victoryFragment)
+                        view?.findNavController()?.navigate(
+                            GameFragmentDirections.actionGameFragmentToVictoryFragment(viewModel.score.value!!)
+                        )
                     }
                     NavigationDestination.SHOW_GAME_OVER -> {
                         Navigation.findNavController(view!!)

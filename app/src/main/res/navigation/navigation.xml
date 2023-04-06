@@ -45,5 +45,14 @@
         android:id="@+id/victoryFragment"
         android:name="com.example.a10millionquiz.VictoryFragment"
         android:label="fragment_victory"
-        tools:layout="@layout/fragment_victory" />
+        tools:layout="@layout/fragment_victory" >
+        <argument
+            android:name="finalScore"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_victoryFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:popUpTo="@id/titleFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

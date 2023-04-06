@@ -3,6 +3,9 @@ buildscript {
     ext {
         version_navigation = '2.5.0-alpha01'
     }
+    dependencies {
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
+    }
 }
 
 plugins {
