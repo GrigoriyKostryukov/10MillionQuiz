@@ -31,7 +31,7 @@ interface QuestionDatabaseDao {
     fun getAnswers(questionId: Long): List<Answer>
 
     @Query("SELECT * FROM user_result ORDER BY max_score DESC")
-    fun getRating(): List<UserResult>
+    fun getRating(): LiveData<List<UserResult>>
 
     @Update
     fun updateUserResult(result: UserResult)

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_titleFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_ratingFragment"
+            app:destination="@id/ratingFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -55,4 +58,8 @@
             app:popUpTo="@id/titleFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.example.a10millionquiz.RatingFragment"
+        android:label="RatingFragment" />
 </navigation>
